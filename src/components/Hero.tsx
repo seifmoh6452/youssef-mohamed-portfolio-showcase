@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="absolute -inset-4 bg-gradient-accent rounded-full opacity-20 blur-xl"></div>
             <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-card-custom border-4 border-background">
               <img 
-                src={profilePhoto} 
+                src="/lovable-uploads/bfd7a485-1f0e-4e8e-be94-5524f3ab8491.png" 
                 alt="Youssef Mohamed - Full-Stack Developer"
                 className="w-full h-full object-cover"
               />

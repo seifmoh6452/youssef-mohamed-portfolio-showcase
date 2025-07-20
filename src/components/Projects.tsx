@@ -107,7 +107,13 @@ const Projects = () => {
                 {/* Project Visual */}
                 <div className="bg-gradient-hero p-8 flex items-center justify-center min-h-[300px]">
                   <div className="text-center space-y-4 opacity-60">
-                    <Globe className="h-16 w-16 mx-auto text-accent" />
+                    <div className="bg-green-500 rounded-lg p-3 w-fit mx-auto">
+                      <img 
+                        src="/lovable-uploads/3b9f2436-a200-41d9-94fc-5fbd4e2e8000.png" 
+                        alt="United Group EG Logo" 
+                        className="h-10 w-10"
+                      />
+                    </div>
                     <div className="space-y-2">
                       <p className="font-semibold text-lg">{project.title}</p>
                       <p className="text-sm text-muted-foreground">{project.url}</p>

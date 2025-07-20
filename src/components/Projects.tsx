@@ -31,9 +31,9 @@ const Projects = () => {
       url: "https://essencedemo.com", 
       technologies: ["React SPA", "eCommerce", "Mobile-first", "API Integration"],
       features: ["Shopping Cart", "Product Catalog", "Mobile Responsive", "Payment Integration"],
-      logo: null,
-      logoAlt: "Essence Demo",
-      logoBg: "bg-accent"
+      logo: "/lovable-uploads/f2e34ffa-7898-435f-8209-eda06010279d.png",
+      logoAlt: "Essence Logo",
+      logoBg: "bg-white"
     }
   ];
 

@@ -10,21 +10,30 @@ const Projects = () => {
       description: "A comprehensive corporate website for United Group Egypt showcasing their services and expertise. Built with modern React architecture and optimized for mobile-first experience with multi-language support.",
       url: "https://unitedgroupeg.com",
       technologies: ["React", "PHP", "Mobile-first", "Multilingual"],
-      features: ["Responsive Design", "Multi-language", "Corporate Branding", "SEO Optimized"]
+      features: ["Responsive Design", "Multi-language", "Corporate Branding", "SEO Optimized"],
+      logo: "/lovable-uploads/3b9f2436-a200-41d9-94fc-5fbd4e2e8000.png",
+      logoAlt: "United Group EG Logo",
+      logoBg: "bg-green-500"
     },
     {
       title: "LIFERR Technologies", 
       description: "Technology company website featuring clean design and modern user experience. Developed using vanilla technologies for optimal performance and fast loading times.",
       url: "https://liferr.co",
       technologies: ["HTML", "CSS", "JavaScript", "PHP"],
-      features: ["Fast Loading", "Clean Design", "Modern UI", "Cross-browser Compatible"]
+      features: ["Fast Loading", "Clean Design", "Modern UI", "Cross-browser Compatible"],
+      logo: "/lovable-uploads/4c86b848-a758-4d23-9e8c-e3fe76d127c5.png",
+      logoAlt: "LIFERR Technologies Logo",
+      logoBg: "bg-white"
     },
     {
       title: "Essence eCommerce Demo",
       description: "A fully functional eCommerce single-page application demonstrating modern shopping cart functionality, product catalog, and responsive design patterns.",
       url: "https://essencedemo.com", 
       technologies: ["React SPA", "eCommerce", "Mobile-first", "API Integration"],
-      features: ["Shopping Cart", "Product Catalog", "Mobile Responsive", "Payment Integration"]
+      features: ["Shopping Cart", "Product Catalog", "Mobile Responsive", "Payment Integration"],
+      logo: null,
+      logoAlt: "Essence Demo",
+      logoBg: "bg-accent"
     }
   ];
 
@@ -107,12 +116,16 @@ const Projects = () => {
                 {/* Project Visual */}
                 <div className="bg-gradient-hero p-8 flex items-center justify-center min-h-[300px]">
                   <div className="text-center space-y-4 opacity-60">
-                    <div className="bg-green-500 rounded-lg p-3 w-fit mx-auto">
-                      <img 
-                        src="/lovable-uploads/3b9f2436-a200-41d9-94fc-5fbd4e2e8000.png" 
-                        alt="United Group EG Logo" 
-                        className="h-10 w-10"
-                      />
+                    <div className={`${project.logoBg} rounded-lg p-3 w-fit mx-auto`}>
+                      {project.logo ? (
+                        <img 
+                          src={project.logo} 
+                          alt={project.logoAlt} 
+                          className="h-10 w-10"
+                        />
+                      ) : (
+                        <Globe className="h-10 w-10 text-background" />
+                      )}
                     </div>
                     <div className="space-y-2">
                       <p className="font-semibold text-lg">{project.title}</p>

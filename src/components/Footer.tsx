@@ -88,7 +88,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm opacity-80">
-            © 2024 Youssef Mohamed. All rights reserved.
+            © 2025 Youssef Mohamed. All rights reserved.
           </p>
           <div className="flex items-center gap-2 text-sm opacity-80">
             <span>Made with</span>
